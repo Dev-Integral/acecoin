@@ -6,7 +6,7 @@
 
 
 @layer utilities {
-  .main-app{
+  body{
     background: url("./assets/bg.jpg");
     background-repeat: no-repeat;
     background-position: left;
@@ -47,12 +47,10 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-
 /* Firefox */
 input[type=number] {
   -moz-appearance: textfield;
 }
-
 .credit-card{
   width: 16em;
   height: 23.4em;
@@ -64,8 +62,8 @@ input[type=number] {
   left: 50%;
   transform: translate(-50%, 0);
   overflow: hidden;
+  z-index: 10;
 }
-
 .card_design{
   width: 700px;
   height: 700px;
