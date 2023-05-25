@@ -7,7 +7,7 @@ import docket from "../assets/docket.png";
 
 const Checkout =()=>{
     return(
-        <div className="relative h-full w-[90%] float-right">
+        <div className="relative h-full w-full md:w-[90%] float-right">
             <span className="block h-[1.5em] w-[5em] gen-btn-bg absolute translate-x-[-50%] left-[50%] top-[5em] md:-top-2 "></span>
             <div className="credit-card z-99 absolute top-[5em] md:top-0">
               <div className="flex justify-between items-center mt-2 mb-[8em]">
@@ -34,16 +34,16 @@ const Checkout =()=>{
                 <span className="inner"></span>
               </div>
             </div>
-            <div className="bg-[#f0f3f8] absolute w-full rounded-lg h-[82%] bottom-0">
-              <div className="relative top-[15.7em] p-[3em]">
-                <div className="flex justify-between items-center mb-1">
+            <div className="bg-[#f0f3f8] relative mt-[250px] md:mt-0 md:absolute w-full rounded-lg h-[82%] bottom-0">
+              <div className="relative top-[11em] md:top-[15.7em] p-[3em]">
+                <div className="flex justify-between items-center gap-2 mb-1">
                   <span className="capitalize text-[#8e96a3]">company</span>
                   <span className="flex gap-2">
                     <img src={apple} alt="apple" className="h-5" />
                     <span className="capitalize blue-header font-semibold">apple</span>
                   </span>
                 </div>
-                <div className="flex justify-between items-center mb-1">
+                <div className="flex justify-between gap-2 items-center mb-1">
                   <span className="capitalize text-[#8e96a3]">order number</span>
                   <span className="flex gap-2">
                     <span className="capitalize blue-header font-semibold">1266201</span>
