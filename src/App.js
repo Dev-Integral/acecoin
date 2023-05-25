@@ -1,4 +1,7 @@
 import master_card from "./assets/mc_symbol.svg";
+import master_card_2 from "./assets/mastercard-2.svg";
+import chip from "./assets/chip.png";
+import wifi from "./assets/wifi.png";
 import verified_badge from "./assets/verified-badge.svg";
 import { GoPencil } from "react-icons/go";
 import { TbGridDots } from "react-icons/tb";
@@ -98,7 +101,37 @@ function App() {
             </section>
           </div>
         </div>
-        <div className='col-span-12 md:col-span-5'></div>
+        <div className='col-span-12 md:col-span-5'>
+          <div className="checkout relative h-full w-[90%] float-right">
+            <span className="block h-[1.5em] w-[5em] gen-btn-bg absolute translate-x-[-50%] left-[50%] -top-2"></span>
+            <div className="credit-card z-99 absolute">
+              <div className="flex justify-between items-center mt-2 mb-[8em]">
+                <img src={chip} alt="chip" className="w-7" />
+                <img src={wifi} alt="wifi" className="w-7" />
+              </div>
+              <div className="relative blue-header mb-6">
+                <span class="capitalize mb-2 block font-[0.88em]">jonathan micheal</span>
+                <div class="flex gap-4 items-center">
+                  <div class="flex justify-between items-center gap-1">
+                    <span class="w-1.5 h-1.5 timer-bg block rounded-full"></span>
+                    <span class="w-1.5 h-1.5 timer-bg block rounded-full"></span>
+                    <span class="w-1.5 h-1.5 timer-bg block rounded-full"></span>
+                    <span class="w-1.5 h-1.5 timer-bg block rounded-full"></span>
+                  </div>
+                  <span class="block font-semibold">3456</span>
+                </div>
+              </div>
+              <div className="blue-header font-semibold relative flex justify-between items-center">
+                <span className="capitalize">09/22</span>
+                <img src={master_card_2} alt="mastercard" className="h-[2.5em]" />
+              </div>
+              <div class="card_design">
+                <span class="inner"></span>
+              </div>
+            </div>
+          </div>
+
+        </div>
       </div>
     </div>
   );
